@@ -1,0 +1,41 @@
+.photoBox {
+  height: 400rpx;
+  position: relative
+}
+.photoBackground {
+  filter: blur(40rpx);
+  opacity: .8;
+  height:100%;
+  width: 100%;
+}
+.photo-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+}
+.photo {
+  height: 100%;
+  width: 500rpx;
+  margin-right: 20rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.comments {
+  border-bottom: 1px dashed #ccc;
+  padding: 20rpx;
+  font-size: 30rpx;
+}
+.van-button {
+  margin-bottom: 10rpx;
+}
+.content-img {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 20rpx;
+}

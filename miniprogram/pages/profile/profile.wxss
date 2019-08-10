@@ -1,0 +1,17 @@
+.userInfo {
+  height: 350rpx;
+  background: rgb(197, 99, 94);
+  padding: 100rpx;
+  text-align: center
+}
+.userAvatar {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.userName {
+  color: #fff;
+  margin-top: 100rpx;
+}

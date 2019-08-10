@@ -1,0 +1,28 @@
+<!-- 海报 -->
+<view>
+  <view class="photoBox">
+    <view class="photoBackground" style="background: url({{photo.photos[1].icon}}) no-repeat top/cover"></view>
+    <view class="photo-mask"></view>
+    <image src="{{photo.photos[1].icon}}" class="photo"></image>
+  </view>
+<!-- 评价 -->
+<van-field
+    value="{{ content }}"
+    placeholder="请输入评价"
+    border="{{ false }}"
+    bind:change="onContentChange"
+  />
+  <van-rate 
+    value="{{ score }}" 
+    bind:change="onScoreChange" />
+  <van-button bindtap="uploadImg" type="warning">上传图片</van-button>
+  <view>
+    <image wx:for="{{images}}" wx:key="{{index}}" src="{{item}}" class="content-img"></image>
+  </view>
+  <van-button bindtap="submit" type="danger" size="large">提交评价</van-button>
+<!-- 短评 -->
+  <view wx:for="{{detail.comments}}" wx:key="{{index}}" class="comments">
+    {{item.content}}
+  </view> 
+</view>
+
